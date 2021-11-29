@@ -57,4 +57,3 @@ def update_post(post_id: str, updatePost: Post):
       posts[index]["author"]= updatePost.author
       return{"message": "Post update"}
   raise HTTPException(status_code=404, detail="Post not found")
-  
